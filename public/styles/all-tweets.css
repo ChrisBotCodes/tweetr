@@ -1,0 +1,68 @@
+.container > .all-tweets {
+
+}
+
+article.tweet {
+  margin: 60px 0 30px;
+  border: 2px solid #d1d1d1;
+  border-radius: 7px;
+}
+
+article.tweet > header {
+  height: 80px;
+  background-color: #eee;
+  padding: 10px;
+}
+
+article.tweet > header img {
+  display: inline;
+  height: 60px;
+  width: 60px;
+  border-radius: 7px;
+  margin-right: 5px;
+}
+
+article.tweet > header h2 {
+  font-size: 28px;
+  display: inline;
+  margin-top: 0;
+  vertical-align: top;
+}
+
+article.tweet > header h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: inline;
+  float: right;
+  line-height: 36px;
+  margin: 0;
+  opacity: 0.6;
+}
+
+article.tweet > footer > p {
+  border-bottom: 2px solid #d1d1d1;
+  margin: 0;
+  padding: 25px 10px;
+}
+
+article.tweet > footer > h4 {
+  display: inline-block;
+  width: 50%;
+  font-size: 75%;
+  padding: 10px;
+  margin: 0;
+}
+
+article.tweet > footer > .hover-icons {
+  display: none;
+  width: 48%;
+  text-align: right;
+  opacity: 0.4;
+}
+
+article.tweet > footer > .hover-icons > .hover-icon {
+  margin: 0 4px;
+}
+
+article.tweet:hover > footer > .hover-icons {
+  display: inline-block;
+}
