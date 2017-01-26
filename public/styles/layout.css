@@ -25,10 +25,52 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- .container {
+a.anchor {
+  display: block;
+  height: 40px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+.container {
   width: 500px;
   padding: 4em 2em 20em;
   background-color: white;
   margin: 80px auto 0 auto;
+}
 
- }
+#notEnoughChars {
+  display: none;
+  position: absolute;
+  left: 116px;
+  top: 162px;
+  background-color: #ff3700;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  border-right: 10px solid #6b97ff;
+  border-radius: 7px;
+}
+
+#notEnoughChars p {
+  margin: 0;
+}
+
+#tooManyChars {
+  display: none;
+  position: absolute;
+  right: 91px;
+  top: 162px;
+  background-color: #ff3700;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  border-left: 10px solid #6b97ff;
+  border-radius: 7px;
+}
+
+#tooManyChars p {
+  margin: 0;
+}

@@ -41,25 +41,28 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <a href="#composeTweet"><button class="compose"><i class='hover-icon fa fa-pencil-square-o'></i>Compose</button></a>
     </nav>
 
     <!-- Page-specific (main) content here -->
-
+    <a class="anchor" name="composeTweet"></a>
 
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <div id="notEnoughChars"><p>Cannot submit<br>an empty tweet</p></div>
+        <div id="tooManyChars"><p>Tweet contains too<br>many characters</p></div>
         <form action="/tweets" method="POST">
-          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <textarea id="new-tweet-text" name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
 
-      <section class="all-tweets">
-        <article class="tweet">
+      <section class="tweet-container">
+        <!-- <article class="tweet">
           <header>
-            <img src="http://orig07.deviantart.net/9d3e/f/2015/024/b/d/link_s_awakening___the_wind_fish_by_briteddy-d8f9oce.jpg">
+            <img class="tweet-avatar" src="http://orig07.deviantart.net/9d3e/f/2015/024/b/d/link_s_awakening___the_wind_fish_by_briteddy-d8f9oce.jpg">
             <h2>Chris Bot</h2>
             <h3>@ChrisBotCodes</h3>
           </header>
@@ -72,7 +75,7 @@
               <i class='hover-icon fa fa-heart'></i>
             </div>
           </footer>
-        </article>
+        </article> -->
       </section>
     </main>
 

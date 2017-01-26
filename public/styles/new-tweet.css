@@ -1,6 +1,7 @@
 .container > .new-tweet {
+  display: none;
   width: 100%;
-  margin: auto;
+  margin: auto auto 60px auto;
   padding: 10px;
   border: 2px solid #d1d1d1;
   border-radius: 7px;
