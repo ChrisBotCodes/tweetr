@@ -42,11 +42,12 @@ a.anchor {
 #notEnoughChars {
   display: none;
   position: absolute;
-  left: 116px;
-  top: 162px;
+  width: 172px;
+  right: 447px;
+  top: 27px;
   background-color: #ff3700;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
   padding: 10px;
   border-right: 10px solid #6b97ff;
@@ -60,11 +61,12 @@ a.anchor {
 #tooManyChars {
   display: none;
   position: absolute;
-  right: 91px;
-  top: 162px;
+  width: 211px;
+  left: 447px;
+  top: 27px;
   background-color: #ff3700;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
   padding: 10px;
   border-left: 10px solid #6b97ff;

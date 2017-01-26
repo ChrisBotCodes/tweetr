@@ -9,6 +9,7 @@
 }
 
 .new-tweet > h2 {
+  position: relative;
   border-bottom: 1px solid black;
   margin-top: 0;
 }
@@ -28,6 +29,7 @@
   right: 6px;
 }
 
-.new-tweet > form > .counter.tooManyChars {
+/*class "over140" is added and removed in composer-char-counter.js*/
+.new-tweet > form > .counter.over140 {
   color: red;
 }

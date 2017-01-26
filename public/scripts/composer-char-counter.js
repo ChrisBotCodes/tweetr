@@ -5,9 +5,9 @@ $(document).ready(function() {
     let remainingCount = 140 - textCount;
     let counter = $(this).parent().find($(".counter"));
     if (remainingCount < 0) {
-      counter.addClass('tooManyChars');
+      counter.addClass('over140');
     } else {
-      counter.removeClass('tooManyChars');
+      counter.removeClass('over140');
     }
     counter.text(remainingCount);
   });
