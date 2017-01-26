@@ -1,3 +1,4 @@
+// allows the character counter font to change to red after passing 140 characters
 $(document).ready(function() {
   $(".new-tweet textarea").on("input", function() {
     let text = $(this).val();

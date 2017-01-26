@@ -12,14 +12,15 @@ $(document).ready(function() {
   let form = $('.container form');
   form.on('submit', function(event) {
     event.preventDefault();
-    // when submitting empty tweet
+    // flash message when submitting empty tweet
     if ($('#new-tweet-text').val().length === 0) {
       $('#notEnoughChars').fadeIn(500).css('display', 'inline').delay(1700).fadeOut(500);
-    // when submitting a tweet that is too large
+    // flash message when submitting a tweet that is too large
     } else if ($('#new-tweet-text').val().length > 140) {
       $('#tooManyChars').fadeIn(500).css('display', 'inline').delay(1700).fadeOut(500);
-    // when submitting a good tweet
+    // successful submission when submitting a good tweet
     } else {
+      // remove all tweets from page, post new tweet to db, fetch all tweets
       $('.tweet-container').empty();
       $.ajax('/tweets', {method: 'post', data: $('#new-tweet-text').serialize()})
       .then((result) => {
@@ -32,7 +33,7 @@ $(document).ready(function() {
     }
   });
 
-  // focuses on new tweet text area when clicking compose button
+  // toggles slide up/down & focuses on text area when clicking compose button
   $(".compose").on("click", function(event) {
     event.preventDefault();
     let $newTweetForm = $('section.new-tweet');
@@ -48,7 +49,7 @@ $(document).ready(function() {
 
 
 
-
+// avoid cross-site scripting
 function esc(str) {
   var div = document.createElement('div');
   div.appendChild(document.createTextNode(str));

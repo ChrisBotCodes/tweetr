@@ -16,6 +16,7 @@ MongoClient.connect(mongo_uri, (err, db) => {
   if (err) {
     console.error(`Failed to connect: ${mongo_uri}`);
   }
+
   console.log(`Connected to mongodb: ${mongo_uri}`);
 
   // The in-memory database of tweets. It's a basic object with an array in it.
