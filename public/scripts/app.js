@@ -104,7 +104,7 @@ function timeSince(postTime) {
   } else if (days === 1) {
     return `${days} day ago`;
   } else {
-    let hours = Math.floor(days / 24);
+    let hours = Math.floor(((present - postTime) / 86400000) * 24);
     if (hours > 1) {
       return `${hours} hours ago`;
     } else if (hours === 1) {
