@@ -52,6 +52,7 @@ a.anchor {
   padding: 10px;
   border-right: 10px solid #6b97ff;
   border-radius: 7px;
+  z-index: 1;
 }
 
 #notEnoughChars p {
@@ -71,8 +72,25 @@ a.anchor {
   padding: 10px;
   border-left: 10px solid #6b97ff;
   border-radius: 7px;
+  z-index: 1;
 }
 
 #tooManyChars p {
   margin: 0;
+}
+
+@media screen and (max-width: 930px) {
+  #notEnoughChars {
+    right: 252px;
+    top: 145px;
+    border-right: none;
+    border-top: 10px solid #6b97ff;
+  }
+
+  #tooManyChars {
+    left: 213px;
+    top: 145px;
+    border-left: none;
+    border-top: 10px solid #6b97ff;
+  }
 }

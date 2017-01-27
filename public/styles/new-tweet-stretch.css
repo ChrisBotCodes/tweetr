@@ -8,7 +8,6 @@
   background-color: #eee; }
 .container h2 {
   position: relative;
-  border-bottom: 1px solid black;
   margin-top: 0; }
 .container form {
   /*class "over140" is added and removed in composer-char-counter.js*/ }
