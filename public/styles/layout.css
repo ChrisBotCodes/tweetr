@@ -83,6 +83,12 @@ a.anchor {
   #notEnoughChars {
     right: 252px;
     top: 145px;
+  }
+
+@media (max-width: 930px) {
+  #notEnoughChars {
+    top: 145px;
+    right: 252px;
     border-right: none;
     border-top: 10px solid #6b97ff;
   }
@@ -90,6 +96,8 @@ a.anchor {
   #tooManyChars {
     left: 213px;
     top: 145px;
+    top: 145px;
+    left: 213px;
     border-left: none;
     border-top: 10px solid #6b97ff;
   }
