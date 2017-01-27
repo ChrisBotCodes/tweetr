@@ -1,0 +1,29 @@
+.container .new-tweet {
+  display: none;
+  width: 100%;
+  margin: auto auto 60px auto;
+  padding: 10px;
+  border: 2px solid #d1d1d1;
+  border-radius: 7px;
+  background-color: #eee; }
+.container h2 {
+  position: relative;
+  border-bottom: 1px solid black;
+  margin-top: 0; }
+.container form {
+  /*class "over140" is added and removed in composer-char-counter.js*/ }
+  .container form textarea {
+    width: 100%;
+    padding: 5px;
+    resize: vertical; }
+  .container form .counter {
+    font-style: italic;
+    font-size: 0.85em;
+    float: right;
+    position: relative;
+    top: 6px;
+    right: 6px; }
+  .container form .counter.over140 {
+    color: red; }
+
+/*# sourceMappingURL=new-tweet-stretch.css.map */
