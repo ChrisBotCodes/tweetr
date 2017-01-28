@@ -7,18 +7,18 @@ const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
 const MongoClient   = require("mongodb").MongoClient;
-// const mongo_uri     = "mongodb://localhost:27017/tweeter";
-const mongo_uri     = process.env.mongodb_uri;
+// const MONGODB_URI   = "mongodb://localhost:27017/tweeter";
+const MONGODB_URI   = process.env.MONGODB_URI;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-MongoClient.connect(mongo_uri, (err, db) => {
+MongoClient.connect(MONGODB_URI, (err, db) => {
   if (err) {
-    console.error(`Failed to connect: ${mongo_uri}`);
+    console.error(`Failed to connect: ${MONGODB_URI}`);
   }
 
-  console.log(`Connected to mongodb: ${mongo_uri}`);
+  console.log(`Connected to mongodb: ${MONGODB_URI}`);
 
   // The in-memory database of tweets. It's a basic object with an array in it.
   // const db = require("./lib/in-memory-db");
